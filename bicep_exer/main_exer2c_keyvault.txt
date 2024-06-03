@@ -1,0 +1,199 @@
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/main_exer2c",
+  "location": null,
+  "name": "main_exer2c",
+  "properties": {
+    "correlationId": "2edb1e43-6c7b-43ce-841f-e113b4f8cb34",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/serverfarms/dev-toyhrywlu23v5lc2es-plan",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "dev-toyhrywlu23v5lc2es-plan",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/sites/dev-toyhrywlu23v5lc2es-app",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "dev-toyhrywlu23v5lc2es-app",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "dev-toyhrywlu23v5lc2es-sql",
+            "resourceType": "Microsoft.Sql/servers"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/Employees",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "dev-toyhrywlu23v5lc2es-sql/Employees",
+        "resourceType": "Microsoft.Sql/servers/databases"
+      }
+    ],
+    "duration": "PT45.7768631S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/Employees",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/serverfarms/dev-toyhrywlu23v5lc2es-plan",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/sites/dev-toyhrywlu23v5lc2es-app",
+        "resourceGroup": "storage-resource-group"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "appServicePlanInstanceCount": {
+        "type": "Int",
+        "value": 1
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "F1",
+          "tier": "Free"
+        }
+      },
+      "environmentName": {
+        "type": "String",
+        "value": "dev"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "solutionName": {
+        "type": "String",
+        "value": "toyhrywlu23v5lc2es"
+      },
+      "sqlDatabaseSku": {
+        "type": "Object",
+        "value": {
+          "name": "Standard",
+          "tier": "Standard"
+        }
+      },
+      "sqlServerAdministratorLogin": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.KeyVault/vaults/bicep-learn-exer",
+            "resourceGroup": "storage-resource-group"
+          },
+          "secretName": "sqlServerAdministratorLogin"
+        },
+        "type": "SecureString"
+      },
+      "sqlServerAdministratorPassword": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.KeyVault/vaults/bicep-learn-exer",
+            "resourceGroup": "storage-resource-group"
+          },
+          "secretName": "sqlServerAdministratorPassword"
+        },
+        "type": "SecureString"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverfarms",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Sql",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers/databases",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "12773743649865061591",
+    "templateLink": null,
+    "timestamp": "2024-06-03T06:23:16.115471+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "storage-resource-group",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
