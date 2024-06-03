@@ -1,0 +1,114 @@
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.KeyVault/vaults/bicep-learn-exer",
+  "location": "eastus",
+  "name": "bicep-learn-exer",
+  "properties": {
+    "accessPolicies": [],
+    "createMode": null,
+    "enablePurgeProtection": null,
+    "enableRbacAuthorization": true,
+    "enableSoftDelete": true,
+    "enabledForDeployment": false,
+    "enabledForDiskEncryption": null,
+    "enabledForTemplateDeployment": true,
+    "hsmPoolResourceId": null,
+    "networkAcls": null,
+    "privateEndpointConnections": null,
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "sku": {
+      "family": "A",
+      "name": "standard"
+    },
+    "softDeleteRetentionInDays": 90,
+    "tenantId": "15ed2a35-cb39-429f-9462-cbe693d2fce9",
+    "vaultUri": "https://bicep-learn-exer.vault.azure.net/"
+  },
+  "resourceGroup": "storage-resource-group",
+  "systemData": {
+    "createdAt": "2024-06-03T05:24:44.822000+00:00",
+    "createdBy": "nokiev@yahoo.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-06-03T05:29:49.929000+00:00",
+    "lastModifiedBy": "nokiev@yahoo.com",
+    "lastModifiedByType": "User"
+  },
+  "tags": {},
+  "type": "Microsoft.KeyVault/vaults"
+}
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.KeyVault/vaults/bicep-learn-exer1",
+  "location": "eastus",
+  "name": "bicep-learn-exer1",
+  "properties": {
+    "accessPolicies": [],
+    "createMode": null,
+    "enablePurgeProtection": null,
+    "enableRbacAuthorization": true,
+    "enableSoftDelete": true,
+    "enabledForDeployment": false,
+    "enabledForDiskEncryption": null,
+    "enabledForTemplateDeployment": true,
+    "hsmPoolResourceId": null,
+    "networkAcls": null,
+    "privateEndpointConnections": null,
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "sku": {
+      "family": "A",
+      "name": "standard"
+    },
+    "softDeleteRetentionInDays": 90,
+    "tenantId": "15ed2a35-cb39-429f-9462-cbe693d2fce9",
+    "vaultUri": "https://bicep-learn-exer1.vault.azure.net/"
+  },
+  "resourceGroup": "storage-resource-group",
+  "systemData": {
+    "createdAt": "2024-06-03T05:32:34.047000+00:00",
+    "createdBy": "nokiev@yahoo.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-06-03T05:32:34.047000+00:00",
+    "lastModifiedBy": "nokiev@yahoo.com",
+    "lastModifiedByType": "User"
+  },
+  "tags": {},
+  "type": "Microsoft.KeyVault/vaults"
+}
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.KeyVault/vaults/bicep-learn-exer",
+  "location": "eastus",
+  "name": "bicep-learn-exer",
+  "properties": {
+    "accessPolicies": [],
+    "createMode": null,
+    "enablePurgeProtection": null,
+    "enableRbacAuthorization": true,
+    "enableSoftDelete": true,
+    "enabledForDeployment": false,
+    "enabledForDiskEncryption": null,
+    "enabledForTemplateDeployment": true,
+    "hsmPoolResourceId": null,
+    "networkAcls": null,
+    "privateEndpointConnections": null,
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "sku": {
+      "family": "A",
+      "name": "standard"
+    },
+    "softDeleteRetentionInDays": 90,
+    "tenantId": "15ed2a35-cb39-429f-9462-cbe693d2fce9",
+    "vaultUri": "https://bicep-learn-exer.vault.azure.net/"
+  },
+  "resourceGroup": "storage-resource-group",
+  "systemData": {
+    "createdAt": "2024-06-03T05:24:44.822000+00:00",
+    "createdBy": "nokiev@yahoo.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-06-03T05:36:13.849000+00:00",
+    "lastModifiedBy": "nokiev@yahoo.com",
+    "lastModifiedByType": "User"
+  },
+  "tags": {},
+  "type": "Microsoft.KeyVault/vaults"
+}
