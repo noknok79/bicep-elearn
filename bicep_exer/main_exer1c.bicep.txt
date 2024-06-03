@@ -1,0 +1,23 @@
+Note: The result may contain false positive predictions (noise).
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues
+
+Resource and property changes are indicated with these symbols:
+  + Create
+  ~ Modify
+  = Nochange
+  * Ignore
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group
+
+  ~ Microsoft.Web/sites/toylaunchywlu23v5lc2es [2022-03-01]
+    + properties.siteConfig.localMySqlEnabled:   false
+    + properties.siteConfig.netFrameworkVersion: "v4.6"
+
+  = Microsoft.Storage/storageAccounts/toylaunchywlu23v5lc2es [2022-09-01]
+  = Microsoft.Web/serverfarms/toy-product-launch-plan [2022-03-01]
+  * Microsoft.Web/serverFarms/toy-product-launch-plan-starter-nokie-storage-resource-group
+  * Microsoft.Web/sites/toy-product-launch-1-nokie-storage-resource-group
+
+Resource changes: 1 to modify, 2 no change, 2 to ignore.

@@ -1,0 +1,38 @@
+Note: The result may contain false positive predictions (noise).
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues
+
+Resource and property changes are indicated with these symbols:
+  + Create
+  * Ignore
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group
+
+  + Microsoft.Web/serverfarms/dev-toyhrywlu23v5lc2es-plan [2022-03-01]
+
+      apiVersion:   "2022-03-01"
+      id:           "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/serverfarms/dev-toyhrywlu23v5lc2es-plan"
+      location:     "eastus"
+      name:         "dev-toyhrywlu23v5lc2es-plan"
+      sku.capacity: 1
+      sku.name:     "F1"
+      type:         "Microsoft.Web/serverfarms"
+
+  + Microsoft.Web/sites/dev-toyhrywlu23v5lc2es-app [2022-03-01]
+
+      apiVersion:              "2022-03-01"
+      id:                      "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/sites/dev-toyhrywlu23v5lc2es-app"
+      location:                "eastus"
+      name:                    "dev-toyhrywlu23v5lc2es-app"
+      properties.httpsOnly:    true
+      properties.serverFarmId: "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/serverfarms/dev-toyhrywlu23v5lc2es-plan"
+      type:                    "Microsoft.Web/sites"
+
+  * Microsoft.Storage/storageAccounts/toylaunchywlu23v5lc2es
+  * Microsoft.Web/serverFarms/toy-product-launch-plan
+  * Microsoft.Web/serverFarms/toy-product-launch-plan-starter-nokie-storage-resource-group
+  * Microsoft.Web/sites/toy-product-launch-1-nokie-storage-resource-group
+  * Microsoft.Web/sites/toylaunchywlu23v5lc2es
+
+Resource changes: 2 to create, 5 to ignore.
