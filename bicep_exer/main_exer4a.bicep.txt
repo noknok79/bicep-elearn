@@ -1,0 +1,43 @@
+Note: The result may contain false positive predictions (noise).
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues
+
+Resource and property changes are indicated with these symbols:
+  + Create
+  * Ignore
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group
+
+  + Microsoft.Sql/servers/teddyeastusywlu23v5lc2es [2021-11-01-preview]
+
+      apiVersion:                            "2021-11-01-preview"
+      id:                                    "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es"
+      location:                              "eastus"
+      name:                                  "teddyeastusywlu23v5lc2es"
+      properties.administratorLogin:         "*******"
+      properties.administratorLoginPassword: "*******"
+      type:                                  "Microsoft.Sql/servers"
+
+  + Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear [2021-11-01-preview]
+
+      apiVersion: "2021-11-01-preview"
+      id:         "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear"
+      location:   "eastus"
+      name:       "TeddyBear"
+      sku.name:   "Standard"
+      type:       "Microsoft.Sql/servers/databases"
+
+  * Microsoft.KeyVault/vaults/bicep-learn-exer
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/Employees
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/master
+  * Microsoft.Storage/storageAccounts/toylaunchywlu23v5lc2es
+  * Microsoft.Web/serverFarms/dev-toyhrywlu23v5lc2es-plan
+  * Microsoft.Web/serverFarms/toy-product-launch-plan
+  * Microsoft.Web/serverFarms/toy-product-launch-plan-starter-nokie-storage-resource-group
+  * Microsoft.Web/sites/dev-toyhrywlu23v5lc2es-app
+  * Microsoft.Web/sites/toy-product-launch-1-nokie-storage-resource-group
+  * Microsoft.Web/sites/toylaunchywlu23v5lc2es
+
+Resource changes: 2 to create, 11 to ignore.

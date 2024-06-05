@@ -1,0 +1,114 @@
+Note: The result may contain false positive predictions (noise).
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues
+
+Resource and property changes are indicated with these symbols:
+  + Create
+  = Nochange
+  * Ignore
+  x Noeffect
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group
+
+  + Microsoft.Network/virtualNetworks/teddybear-australiaeast [2021-08-01]
+
+      apiVersion:               "2021-08-01"
+      id:                       "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Network/virtualNetworks/teddybear-australiaeast"
+      location:                 "australiaeast"
+      name:                     "teddybear-australiaeast"
+      properties.addressSpace.addressPrefixes: [
+        0: "10.10.0.0/16"
+      ]
+      properties.subnets: [
+        0:
+
+          name:                     "backend"
+          properties.addressPrefix: "10.10.10.0/24"
+
+        1:
+
+          name:                     "frontend"
+          properties.addressPrefix: "10.10.5.0/24"
+
+      ]
+      type:                     "Microsoft.Network/virtualNetworks"
+
+  + Microsoft.Network/virtualNetworks/teddybear-eastus2 [2021-08-01]
+
+      apiVersion:               "2021-08-01"
+      id:                       "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Network/virtualNetworks/teddybear-eastus2"
+      location:                 "eastus2"
+      name:                     "teddybear-eastus2"
+      properties.addressSpace.addressPrefixes: [
+        0: "10.10.0.0/16"
+      ]
+      properties.subnets: [
+        0:
+
+          name:                     "backend"
+          properties.addressPrefix: "10.10.10.0/24"
+
+        1:
+
+          name:                     "frontend"
+          properties.addressPrefix: "10.10.5.0/24"
+
+      ]
+      type:                     "Microsoft.Network/virtualNetworks"
+
+  + Microsoft.Network/virtualNetworks/teddybear-southeastasia [2021-08-01]
+
+      apiVersion:               "2021-08-01"
+      id:                       "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Network/virtualNetworks/teddybear-southeastasia"
+      location:                 "southeastasia"
+      name:                     "teddybear-southeastasia"
+      properties.addressSpace.addressPrefixes: [
+        0: "10.10.0.0/16"
+      ]
+      properties.subnets: [
+        0:
+
+          name:                     "backend"
+          properties.addressPrefix: "10.10.10.0/24"
+
+        1:
+
+          name:                     "frontend"
+          properties.addressPrefix: "10.10.5.0/24"
+
+      ]
+      type:                     "Microsoft.Network/virtualNetworks"
+
+  = Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es [2021-11-01-preview]
+  = Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es/databases/TeddyBear [2021-11-01-preview]
+    x sku.tier: "Standard"
+
+  = Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es [2021-11-01-preview]
+  = Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es/databases/TeddyBear [2021-11-01-preview]
+    x sku.tier: "Standard"
+
+  = Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es [2021-11-01-preview]
+  = Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es/databases/TeddyBear [2021-11-01-preview]
+    x sku.tier: "Standard"
+
+  * Microsoft.KeyVault/vaults/bicep-learn-exer
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/Employees
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/master
+  * Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es/databases/master
+  * Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es/databases/master
+  * Microsoft.Sql/servers/teddyeastusywlu23v5lc2es
+  * Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear
+  * Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/master
+  * Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es/databases/master
+  * Microsoft.Storage/storageAccounts/bearauditeastusywlu23v5l
+  * Microsoft.Storage/storageAccounts/toylaunchywlu23v5lc2es
+  * Microsoft.Web/serverFarms/dev-toyhrywlu23v5lc2es-plan
+  * Microsoft.Web/serverFarms/toy-product-launch-plan
+  * Microsoft.Web/serverFarms/toy-product-launch-plan-starter-nokie-storage-resource-group
+  * Microsoft.Web/sites/dev-toyhrywlu23v5lc2es-app
+  * Microsoft.Web/sites/toy-product-launch-1-nokie-storage-resource-group
+  * Microsoft.Web/sites/toylaunchywlu23v5lc2es
+
+Resource changes: 3 to create, 6 no change, 18 to ignore.

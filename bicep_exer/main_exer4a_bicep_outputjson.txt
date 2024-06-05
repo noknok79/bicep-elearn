@@ -1,0 +1,310 @@
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/main_exer4a",
+  "location": null,
+  "name": "main_exer4a",
+  "properties": {
+    "correlationId": "8b5ae981-6eee-4690-9208-2a5d139b51b6",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "teddyeastusywlu23v5lc2es",
+            "resourceType": "Microsoft.Sql/servers"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "teddyeastusywlu23v5lc2es/TeddyBear",
+        "resourceType": "Microsoft.Sql/servers/databases"
+      }
+    ],
+    "duration": "PT12M21.9383779S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "auditStorageAccountSkuName": {
+        "type": "String",
+        "value": "Standard_LRS"
+      },
+      "environmentName": {
+        "type": "String",
+        "value": "Development"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "sqlDatabaseSku": {
+        "type": "Object",
+        "value": {
+          "name": "Standard",
+          "tier": "Standard"
+        }
+      },
+      "sqlServerAdministratorLogin": {
+        "type": "SecureString"
+      },
+      "sqlServerAdministratorLoginPassword": {
+        "type": "SecureString"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Sql",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers/databases",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "5778227473652537746",
+    "templateLink": null,
+    "timestamp": "2024-06-05T02:54:25.991000+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "storage-resource-group",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/main_exer4a",
+  "location": null,
+  "name": "main_exer4a",
+  "properties": {
+    "correlationId": "d9ede0df-ca1c-4800-9044-934a785fa9b5",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "teddyeastusywlu23v5lc2es",
+            "resourceType": "Microsoft.Sql/servers"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "teddyeastusywlu23v5lc2es/TeddyBear",
+        "resourceType": "Microsoft.Sql/servers/databases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Storage/storageAccounts/bearauditeastusywlu23v5l",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "bearauditeastusywlu23v5l",
+            "resourceType": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "teddyeastusywlu23v5lc2es",
+            "resourceType": "Microsoft.Sql/servers"
+          },
+          {
+            "apiVersion": "2021-09-01",
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Storage/storageAccounts/bearauditeastusywlu23v5l",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "bearauditeastusywlu23v5l",
+            "resourceType": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2021-09-01",
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Storage/storageAccounts/bearauditeastusywlu23v5l",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "bearauditeastusywlu23v5l",
+            "resourceType": "Microsoft.Storage/storageAccounts"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/auditingSettings/default",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "teddyeastusywlu23v5lc2es/default",
+        "resourceType": "Microsoft.Sql/servers/auditingSettings"
+      }
+    ],
+    "duration": "PT1M42.6488386S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/auditingSettings/default",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Storage/storageAccounts/bearauditeastusywlu23v5l",
+        "resourceGroup": "storage-resource-group"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "auditStorageAccountSkuName": {
+        "type": "String",
+        "value": "Standard_LRS"
+      },
+      "environmentName": {
+        "type": "String",
+        "value": "Production"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "sqlDatabaseSku": {
+        "type": "Object",
+        "value": {
+          "name": "Standard",
+          "tier": "Standard"
+        }
+      },
+      "sqlServerAdministratorLogin": {
+        "type": "SecureString"
+      },
+      "sqlServerAdministratorLoginPassword": {
+        "type": "SecureString"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Sql",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "servers/databases",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "servers/auditingSettings",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "5778227473652537746",
+    "templateLink": null,
+    "timestamp": "2024-06-05T03:00:52.715191+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "storage-resource-group",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}

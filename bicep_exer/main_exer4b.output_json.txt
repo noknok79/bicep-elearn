@@ -1,0 +1,91 @@
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/main_exer4b",
+  "location": null,
+  "name": "main_exer4b",
+  "properties": {
+    "correlationId": "3d10e9d6-8afc-4712-9a9f-4d91333f3202",
+    "debugSetting": null,
+    "dependencies": [],
+    "duration": "PT2M24.9707591S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "locations": {
+        "type": "Array",
+        "value": [
+          "southeastasia",
+          "eastus2",
+          "australiaeast"
+        ]
+      },
+      "sqlServerAdministratorLogin": {
+        "type": "SecureString"
+      },
+      "sqlServerAdministratorLoginPassword": {
+        "type": "SecureString"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "6059084968917568435",
+    "templateLink": null,
+    "timestamp": "2024-06-05T06:25:04.258371+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "storage-resource-group",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}

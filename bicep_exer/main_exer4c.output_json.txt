@@ -1,0 +1,166 @@
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/main_exer4c",
+  "location": null,
+  "name": "main_exer4c",
+  "properties": {
+    "correlationId": "4483ee36-dbf2-4a5a-b1ef-fa1461de8051",
+    "debugSetting": null,
+    "dependencies": [],
+    "duration": "PT37.4825465S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Network/virtualNetworks/teddybear-australiaeast",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Network/virtualNetworks/teddybear-eastus2",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Network/virtualNetworks/teddybear-southeastasia",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es/databases/TeddyBear",
+        "resourceGroup": "storage-resource-group"
+      }
+    ],
+    "outputs": {
+      "serverInfo": {
+        "type": "Array",
+        "value": [
+          {
+            "fullyQualifiedDomainName": "teddysoutheastasiaywlu23v5lc2es.database.windows.net",
+            "location": "southeastasia",
+            "name": "teddysoutheastasiaywlu23v5lc2es"
+          },
+          {
+            "fullyQualifiedDomainName": "teddyeastus2ywlu23v5lc2es.database.windows.net",
+            "location": "eastus2",
+            "name": "teddyeastus2ywlu23v5lc2es"
+          },
+          {
+            "fullyQualifiedDomainName": "teddyaustraliaeastywlu23v5lc2es.database.windows.net",
+            "location": "australiaeast",
+            "name": "teddyaustraliaeastywlu23v5lc2es"
+          }
+        ]
+      }
+    },
+    "parameters": {
+      "locations": {
+        "type": "Array",
+        "value": [
+          "southeastasia",
+          "eastus2",
+          "australiaeast"
+        ]
+      },
+      "sqlServerAdministratorLogin": {
+        "type": "SecureString"
+      },
+      "sqlServerAdministratorLoginPassword": {
+        "type": "SecureString"
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "ipAddressRange": "10.10.5.0/24",
+            "name": "frontend"
+          },
+          {
+            "ipAddressRange": "10.10.10.0/24",
+            "name": "backend"
+          }
+        ]
+      },
+      "virtualNetworkAddressPrefix": {
+        "type": "String",
+        "value": "10.10.0.0/16"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Network",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "southeastasia",
+              "eastus2",
+              "australiaeast"
+            ],
+            "properties": null,
+            "resourceType": "virtualNetworks",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "9750090286691419499",
+    "templateLink": null,
+    "timestamp": "2024-06-05T07:19:08.623809+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "storage-resource-group",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
