@@ -1,0 +1,112 @@
+Please provide string value for 'location' (? for help): {
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/main_exer5a",
+  "location": null,
+  "name": "main_exer5a",
+  "properties": {
+    "correlationId": "18f5a84f-5a68-4228-8c42-beb3a3168e47",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/toy-launch-app",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "toy-launch-app",
+            "resourceType": "Microsoft.Resources/deployments"
+          },
+          {
+            "apiVersion": "2022-09-01",
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/toy-launch-app",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "toy-launch-app",
+            "resourceType": "Microsoft.Resources/deployments"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/toy-launch-cdn",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "toy-launch-cdn",
+        "resourceType": "Microsoft.Resources/deployments"
+      }
+    ],
+    "duration": "PT1M30.0603383S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Cdn/profiles/cdn-ywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Cdn/profiles/cdn-ywlu23v5lc2es/endpoints/endpoint-ywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/serverfarms/toy-product-launch-plan",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Web/sites/toy-ywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      }
+    ],
+    "outputs": {
+      "websiteHostName": {
+        "type": "String",
+        "value": "endpoint-ywlu23v5lc2es.azureedge.net"
+      }
+    },
+    "parameters": {
+      "appServiceAppName": {
+        "type": "String",
+        "value": "toy-ywlu23v5lc2es"
+      },
+      "appServicePlanSkuName": {
+        "type": "String",
+        "value": "F1"
+      },
+      "deployCdn": {
+        "type": "Bool",
+        "value": true
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "7759446573533485393",
+    "templateLink": null,
+    "timestamp": "2024-06-10T05:45:29.603274+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "storage-resource-group",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
