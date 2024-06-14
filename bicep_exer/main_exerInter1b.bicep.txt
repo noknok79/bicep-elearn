@@ -1,0 +1,190 @@
+Note: The result may contain false positive predictions (noise).
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues
+
+Resource and property changes are indicated with these symbols:
+  - Delete
+  + Create
+  ~ Modify
+  * Ignore
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group
+
+  + Microsoft.Storage/storageAccounts/strginterexer/blobServices/default/providers/Microsoft.Insights/diagnosticSettings/route-logs-to-log-analytics [2021-05-01-preview]
+
+      apiVersion:             "2021-05-01-preview"
+      id:                     "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Storage/storageAccounts/strginterexer/blobServices/default/providers/Microsoft.Insights/diagnosticSettings/route-logs-to-log-analytics"
+      name:                   "route-logs-to-log-analytics"
+      properties.logs: [
+        0:
+
+          category: "StorageRead"
+          enabled:  true
+
+        1:
+
+          category: "StorageWrite"
+          enabled:  true
+
+        2:
+
+          category: "StorageDelete"
+          enabled:  true
+
+      ]
+      properties.workspaceId: "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.OperationalInsights/workspaces/ToyLogs"
+      type:                   "Microsoft.Insights/diagnosticSettings"
+
+  ~ Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es [2015-04-08]
+    - properties.configurationOverrides:
+
+        EnablePerRegionPerPartitionAutoscaleOptIn: "True"
+
+    - properties.sqlEndpoint: "https://toyrnd-ywlu23v5lc2es.documents.azure.com:443/"
+    ~ properties.locations: [
+      ~ 0:
+
+        - failoverPriority: 0
+
+      ]
+
+  ~ Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/providers/Microsoft.Insights/diagnosticSettings/route-logs-to-log-analytics [2021-05-01-preview]
+    - properties.logAnalyticsDestinationType: "AzureDiagnostics"
+    - properties.metrics: [
+        0:
+
+          category:                "Requests"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      ]
+    ~ properties.logs: [
+      ~ 0:
+
+        - retentionPolicy.days: 0
+
+      - 1:
+
+          category:                "MongoRequests"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      - 2:
+
+          category:                "QueryRuntimeStatistics"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      - 3:
+
+          category:                "PartitionKeyStatistics"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      - 4:
+
+          category:                "PartitionKeyRUConsumption"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      - 5:
+
+          category:                "ControlPlaneRequests"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      - 6:
+
+          category:                "CassandraRequests"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      - 7:
+
+          category:                "GremlinRequests"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      - 8:
+
+          category:                "TableApiRequests"
+          enabled:                 false
+          retentionPolicy.days:    0
+          retentionPolicy.enabled: false
+
+      ]
+
+  ~ Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/sqlDatabases/FlightTest [2024-05-15]
+    + properties.options:
+
+        throughput: 400
+
+
+  ~ Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/sqlDatabases/FlightTest/containers/FlightTests [2024-05-15]
+    - properties.resource.conflictResolutionPolicy.conflictResolutionPath: "/_ts"
+    - properties.resource.indexingPolicy.automatic:                        true
+    - properties.resource.indexingPolicy.excludedPaths: [
+        0:
+
+          path: "/"_etag"/?"
+
+      ]
+    - properties.resource.indexingPolicy.includedPaths: [
+        0:
+
+          path: "/*"
+
+      ]
+
+  * Microsoft.Cdn/profiles/cdn-ywlu23v5lc2es
+  * Microsoft.Cdn/profiles/cdn-ywlu23v5lc2es/endpoints/endpoint-ywlu23v5lc2es
+  * Microsoft.EventGrid/systemTopics/bearauditeastusywlu23v5l-aba5309b-88be-41fe-aeee-52225c0f030a
+  * Microsoft.EventGrid/systemTopics/toylaunchywlu23v5lc2es-7d8f3b35-d9ae-424b-b568-54ed2c229979
+  * Microsoft.KeyVault/vaults/bicep-learn-exer
+  * Microsoft.Network/virtualNetworks/teddybear-australiaeast
+  * Microsoft.Network/virtualNetworks/teddybear-eastus2
+  * Microsoft.Network/virtualNetworks/teddybear-southeastasia
+  * Microsoft.OperationalInsights/workspaces/ToyLogs
+  * Microsoft.OperationalInsights/workspaces/storage-rg-workspace
+  * Microsoft.OperationalInsights/workspaces/storageworkspace-rg
+  * Microsoft.OperationsManagement/solutions/SQLAuditing[storage-rg-workspace]
+  * Microsoft.OperationsManagement/solutions/SecurityCenterFree(storage-rg-workspace)
+  * Microsoft.OperationsManagement/solutions/SecurityCenterFree(storageworkspace-rg)
+  * Microsoft.OperationsManagement/solutions/SecurityInsights(storage-rg-workspace)
+  * Microsoft.OperationsManagement/solutions/SecurityInsights(storageworkspace-rg)
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/Employees
+  * Microsoft.Sql/servers/dev-toyhrywlu23v5lc2es-sql/databases/master
+  * Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es
+  * Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es/databases/TeddyBear
+  * Microsoft.Sql/servers/teddyaustraliaeastywlu23v5lc2es/databases/master
+  * Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es
+  * Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es/databases/TeddyBear
+  * Microsoft.Sql/servers/teddyeastus2ywlu23v5lc2es/databases/master
+  * Microsoft.Sql/servers/teddyeastusywlu23v5lc2es
+  * Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/TeddyBear
+  * Microsoft.Sql/servers/teddyeastusywlu23v5lc2es/databases/master
+  * Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es
+  * Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es/databases/TeddyBear
+  * Microsoft.Sql/servers/teddysoutheastasiaywlu23v5lc2es/databases/master
+  * Microsoft.Storage/storageAccounts/bearauditeastusywlu23v5l
+  * Microsoft.Storage/storageAccounts/strginterexer
+  * Microsoft.Storage/storageAccounts/toylaunchywlu23v5lc2es
+  * Microsoft.Web/serverFarms/dev-toyhrywlu23v5lc2es-plan
+  * Microsoft.Web/serverFarms/toy-product-launch-plan
+  * Microsoft.Web/serverFarms/toy-product-launch-plan-starter-nokie-storage-resource-group
+  * Microsoft.Web/sites/dev-toyhrywlu23v5lc2es-app
+  * Microsoft.Web/sites/toy-product-launch-1-nokie-storage-resource-group
+  * Microsoft.Web/sites/toy-ywlu23v5lc2es
+  * Microsoft.Web/sites/toylaunchywlu23v5lc2es
+
+Resource changes: 1 to create, 4 to modify, 41 to ignore.

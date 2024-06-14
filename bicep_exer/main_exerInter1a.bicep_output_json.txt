@@ -1,0 +1,134 @@
+{
+  "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.Resources/deployments/main_exerInter1a",
+  "location": null,
+  "name": "main_exerInter1a",
+  "properties": {
+    "correlationId": "b6f52e5e-c697-4c39-8ea9-66ac92fcbee1",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/sqlDatabases/FlightTest",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "toyrnd-ywlu23v5lc2es/FlightTest",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/sqlDatabases/FlightTest/containers/FlightTests",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "toyrnd-ywlu23v5lc2es/FlightTest/FlightTests",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es",
+            "resourceGroup": "storage-resource-group",
+            "resourceName": "toyrnd-ywlu23v5lc2es",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          }
+        ],
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/sqlDatabases/FlightTest",
+        "resourceGroup": "storage-resource-group",
+        "resourceName": "toyrnd-ywlu23v5lc2es/FlightTest",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      }
+    ],
+    "duration": "PT2M18.5755805S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/sqlDatabases/FlightTest",
+        "resourceGroup": "storage-resource-group"
+      },
+      {
+        "id": "/subscriptions/a141da8b-6551-40fc-9cc0-34617130f107/resourceGroups/storage-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd-ywlu23v5lc2es/sqlDatabases/FlightTest/containers/FlightTests",
+        "resourceGroup": "storage-resource-group"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "cosmoDBAccountName": {
+        "type": "String",
+        "value": "toyrnd-ywlu23v5lc2es"
+      },
+      "cosmosDBDatabaseThroughput": {
+        "type": "Int",
+        "value": 400
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases/containers",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "16924852866653202882",
+    "templateLink": null,
+    "timestamp": "2024-06-14T03:48:41.031290+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "storage-resource-group",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
